@@ -1,7 +1,7 @@
-import { Person } from '../hello';
+import { Person } from "../hello";
 
-test('juan can say hello', () => {
+test("juan can say hello", () => {
   const juan = new Person();
 
-  expect(juan.sayHi()).toEqual('hello!');
+  expect(juan.sayHi()).toEqual("hello!");
 });

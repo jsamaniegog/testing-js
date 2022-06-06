@@ -1,5 +1,5 @@
 export class Person {
   sayHi() {
-    return 'hello!';
+    return "hello!";
   }
 }

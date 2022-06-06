@@ -1,11 +1,11 @@
 class Persona {
   decirHola() {
-    return 'hola!';
+    return "hola!";
   }
 }
 
-test('juan puede decir hola', () => {
+test("juan puede decir hola", () => {
   const juan = new Persona();
 
-  expect(juan.decirHola()).toEqual('hola!');
+  expect(juan.decirHola()).toEqual("hola!");
 });
