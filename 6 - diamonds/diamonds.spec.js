@@ -5,9 +5,9 @@ async function mine(s) {
         setTimeout(function () {
             let diamonds = 0;
 
-            while (s.includes('<>')) {
-                s = s.replace(/[^<>]/g, "");
-                diamonds = s.lenght;
+            while (s.includes("<>")) {
+                diamonds += (s.match(/<>/g) || []).length;
+                s = s.replace(/<>/g, "");
             }
 
             resolve(diamonds);
